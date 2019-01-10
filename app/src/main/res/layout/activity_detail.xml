@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+<ImageView
+    android:layout_marginTop="8dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:src="@drawable/testimage"
+    android:id="@+id/image"
+    android:contentDescription="null"
+    android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="@string/movie_detail_title_label"
+        android:textStyle="bold"
+        android:id="@+id/titleLabel"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleLabel"
+        android:textSize="20sp"
+        android:id="@+id/title"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:text="@string/movie_detail_release_date_label"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:id="@+id/release_dateLabel"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/release_dateLabel"
+        android:id="@+id/release_date"
+        android:textSize="20sp"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/movie_detail_vote_label"
+        android:layout_below="@id/release_date"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:id="@+id/VoteLabel"
+
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/VoteLabel"
+        android:id="@+id/vote"
+        android:textSize="20sp"
+         />
+
+    <TextView
+        android:id="@+id/plot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vote"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="20dp"
+        />
+
+
+</RelativeLayout>
+    </ScrollView>
